@@ -1,0 +1,1 @@
+C:\Dev\MathQuizGenerator\x64\Release\MathQuizGenerator.exe

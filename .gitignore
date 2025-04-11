@@ -52,3 +52,19 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc
+
+#additional manual ignores
+.vs/
+
+*.user
+*.vcxproj.user
+*.suo
+*.opendb
+*.log
+*.tlog
+*.obj
+*.idb
+*.pdb
+*.ipch
+*.db
+*.cache

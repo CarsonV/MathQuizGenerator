@@ -1,0 +1,429 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" FontFamily="Segoe UI" FontSize="12">
+  <FlowDocument.Tag><![CDATA[{
+  "timestamp": "2025-04-11 14:31:03",
+  "files": {
+    "C:\\Dev\\MathQuizGenerator\\MathQuizGenerator.vcxproj": {
+      "before": "7VlLb+M2EN5zgf6EAoKQhZNDLDsJNotG1iJrJ6lRO0njPC4FFrRE2+xKokBReWy39/7sDsWHLD9WNtIm2yA5BDD5DTkaznwzQ/7905s37of7KLRuMUsJjVt2s96wLRz7NCDxuGVnfLT93v7g/fiDe87oH9jnVgePUBbyS8TGmKct+2NGwsC2YJUYfk04T352nNSf4Ail9Yj4jKZ0xOs+jZwA3+KQJpg5UToUYs5Oo7Frw+qW5XY5jk4YzRKrh4Y4bNlqwzaNR2ScMcRBwVSCAb5o1urGfpgFuGV38DAbf70h8e6OlgCZ0lJejnGd8qBQRfy55yHiI8oiL1/EdcxviYABaY9F4hXKXeAQoxRXqKdQz6GgtN79u73H2g6W+E8s9y3VVrbbmsq5jvFQ6bDgAODK/KHktCchHaKwcNPrtvKTaxlhXnO/3nCduWHlVb/ihzvKAul0QtJ19JBCqOVOMhJ4fw6bjf2GP9rf3n/ffLe952OI1kawv42CoLG3M2ruBCP0l3HVXEYtc0EpP0URThPkY6+P+OS3jHw5wTGGQKPMdcoAJQWxENC7VMa+jgjzZQ3xZd+EiGVydQrDqeCPEsq4pT6uZW9sXrcVw5yDblu/9w2RtJOkrjionsARpLblLDoQCMyACM5o2bWNzVKYbn3d2NTab9VardoUXdRszT8lER0JZQ65fEiwd5gkIfFzepoJ1nxame4qxfkuPTJkiBGcepxl2HXmx5WAVvCS0jDF3Ltt7u0WwaRHFbg9QQz5HLMBIK9iAvwNa5dGl9oejF4ch7WO2UpE9nSGG0GA/WuWu5nQEIMJxgxFZwknEfmSH6U6nqXTz2p4Q9BPZ/SX463A+09ntpfiq931CLpMzFK4lCeP7jmORckJhMWh1FQZE5JsvlGOnU4NJeEBsB0OJCWvJqE5bjDBULTaa7FcKTnkOkESm7cHEDkTSbND2Gy6mso29QxgOm9NcS2+JylPNyFTrb1ObcukrB71UQj5qIM40vnDpMeVTPsYQ82kg1dTmbZlScGRM9GrmZabSXvUyzOUjrMSr4nQ7yPRMZugFT0HVLskzktZiZ6ijfUqW+1q7bBNo4SEWA0An90gFgMN90SH7uX/odgsDcqCB6CDTq89wf5nVSGZnwZwzjDwv4/TlLJC99S76Z7u7hx86hx9vDo5+NQ+Ox2c9Y4O3m4uwW+JTmHxSmYrUaNDk45iH/eh5FUqzY6qWs2Z/W63R+LPhQ0G2XDwkILBPVgghbLQdYohs6XqkWQ135XbizZD7b10With9pQNZWGg6Zz3yFPXcZPfXdSK3uVR536cxb740Nw7xFeAv6iPXjhlLNaNOSOQ7H0N073PggkjZNxKFp7mpwEs8w3pZaf/cy87itEwxO2zfufw8piG4jZO2XrRjDGK6mDwBR5hBtd4ps1cMGGElrqsNP3SabmA6zyFR091PM/MYq/8pTjzCfirlPdn2Xu9rKW55ztnr1fe+v54q0jM4HLGC4vHhsM4vcPsGoUkEHendT9JdP22WOAX6PUoe+ijGI2hG6zEd+Mk48cEh0E1VlzlQnEJySNSxL2KRnMXwNUbqU2qgeJi+apbjRv4lOEVYcqCK6JXNrQowEXvPITnmem1JdUVflA8VhXJSL09LXeLSckp5uAzTlGBnnKJCuRCh6iQ0WdbAVMnW4GS57oKSJ/qKlh9phXY0oka7Px5rne9xeXjpz5QdRskuzP1emkuuNQzxuLbKvM24/0D",
+      "after": "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"
+    }
+  }
+}]]></FlowDocument.Tag>
+  <Section Margin="0,24" TextAlignment="Center">
+    <Paragraph FontSize="24" FontWeight="Bold" Margin="12,0">
+      <LineBreak />
+      <Span Foreground="Gray">Qt Visual Studio Tools</Span>
+    </Paragraph>
+    <Paragraph FontSize="42" Margin="12,0" FontWeight="Bold">
+      <Span TextDecorations="Underline">Project Format Conversion</Span>
+    </Paragraph>
+    <Paragraph Margin="12,8" FontSize="18">
+      <Span>Report generated on 2025-04-11 14:31:03</Span>
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Files</Span>
+    </Paragraph>
+    <Paragraph Margin="24,12,0,0">
+      <Span FontFamily="Consolas" FontSize="14" Background="WhiteSmoke"><![CDATA[C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj]]></Span>
+      <LineBreak />
+      <Hyperlink NavigateUri="file://C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj?before">[Before]</Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj?after">[After]</Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj?diff&amp;before&amp;after">
+                        [Diff before/after]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj?diff&amp;before&amp;current">
+                        [Diff before/current]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj?diff&amp;after&amp;current">
+                        [Diff after/current]
+                    </Hyperlink>
+      <LineBreak />
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Changes</Span>
+    </Paragraph>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Enabling multi-processor compilation]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Project format version]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Keyword>QtVS_v304</Keyword>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Fallback for QTMSBUILD environment variable]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Default Qt properties]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt build settings]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Warn if Qt/MSBuild is not found]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  </Target>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt property sheet]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt targets]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Dev\MathQuizGenerator\MathQuizGenerator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+  </Section>
+  <Section>
+    <Paragraph />
+  </Section>
+</FlowDocument>
+<!--O6KQ2MZB6dmMeSGEYAIBrkysEr6Sv6px5FNgK7KzYiI=-->
