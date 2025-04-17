@@ -55,7 +55,7 @@ compile_commands.json
 
 #additional manual ignores
 .vs/
-
+x64
 *.user
 *.vcxproj.user
 *.suo
