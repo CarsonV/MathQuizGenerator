@@ -18,14 +18,27 @@
 #include "InputField.h"
 #include "HistoryManager.h"
 
+#include <QMainWindow>
+#include "ui_MainUI.h"
+
  // The QuizUI class acts as the main interface for interacting with the user
-class QuizUI {
+class QuizUI : public QMainWindow {
+
+    Q_OBJECT
+
 private:
     ScoreManager scoreManager;             // Manages the user's score
     InputField answerField;                // Handles user input (currently unused)
     MathProblemGenerator generator;        // Generates math problems based on difficulty
     AnswerValidator validator;             // Validates user input against the correct answer
     HistoryManager historyManager;         // Stores and retrieves score history
+
+    Ui::MainUIClass ui;
+
+private slots:
+    void on_submitButton_clicked();
+    void on_nextButton_clicked();
+
 
 public:
     // Sets the difficulty level for the quiz (easy, medium, hard)
@@ -39,4 +52,7 @@ public:
 
     // Displays the user's score history from past attempts
     void showHistory();
+
+    QuizUI(QWidget* parent = nullptr);
+    ~QuizUI();
 };

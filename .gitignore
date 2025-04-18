@@ -73,3 +73,6 @@ x64\
 *.db
 *.cache
 /x64/
+/x64/Release/qt/qmake/qtvars.pro
+/x64/Release/MathQuizGenerator.iobj
+/x64/Release/MathQuizGenerator.ipdb

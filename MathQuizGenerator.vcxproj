@@ -179,7 +179,7 @@
     <QtMoc Include="MainUI.h" />
     <ClInclude Include="MathProblemGenerator.h" />
     <ClInclude Include="Problem.h" />
-    <ClInclude Include="QuizUI.h" />
+    <QtMoc Include="QuizUI.h" />
     <ClInclude Include="Score.h" />
     <ClInclude Include="ScoreHistory.h" />
     <ClInclude Include="ScoreManager.h" />

@@ -48,6 +48,9 @@
     <ClCompile Include="MathProblemGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MainUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Problem.h">
@@ -74,11 +77,19 @@
     <ClInclude Include="UserDatabase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="QuizUI.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MathProblemGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MainUI.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="QuizUI.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="MainUI.ui" />
   </ItemGroup>
 </Project>

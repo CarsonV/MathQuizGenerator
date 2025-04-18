@@ -16,9 +16,16 @@
 #include "QuizUI.h"
 
 #include <QApplication>
-#include <QMainWindow>
 
-int main() {
+
+int main(int argc, char* argv[]) {
+
+    QApplication app(argc, argv);
+    QuizUI w;
+    w.show();
+    return app.exec();
+
+    /*
     QuizUI quizApp;  // Initialize the main UI component for the quiz
 
     std::string difficulty;
@@ -49,4 +56,5 @@ int main() {
     quizApp.showScore();  // Final score display
 
     return 0;
+    */
 }

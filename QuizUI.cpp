@@ -23,6 +23,8 @@ void QuizUI::setDifficulty(const std::string& level) {
 // Display one quiz problem, get input, validate it, and update the score
 void QuizUI::displayQuiz() {
     Problem problem = generator.generateRandomProblem();  // Get a random math problem
+
+
     std::cout << "Solve: " << problem.question << std::endl;
     std::cout << "Your answer: ";
 
@@ -63,3 +65,45 @@ void QuizUI::showHistory() {
         std::cout << "Attempt " << i + 1 << ": " << scores[i].value << "\n";
     }
 }
+
+void QuizUI::on_submitButton_clicked()
+{
+   
+
+    bool ok = false;
+    int userAnswer = ui.answerLine->text().toInt(&ok);
+    
+    if (!ok) {
+        ui.resultLabel->setText("Invalid input.Please enter a number.");
+        return;
+    }
+
+    bool correct = validator.validateAnswer(userAnswer);  // Check if answer is correct
+    ui.resultLabel->clear();
+    ui.resultLabel->setText(correct ? "Correct!" : "Wrong!");
+
+}
+
+void QuizUI::on_nextButton_clicked()
+{
+    Problem problem = generator.generateRandomProblem();  // Get a random math problem
+
+    ui.questionLabel->setText(QString::fromStdString(problem.question)); // QT set questionLabel to problem
+    ui.answerLine->clear();
+    ui.resultLabel->clear();
+
+    validator.setAnswer(problem.answer);  // Set the correct answer for validation
+}
+
+QuizUI::QuizUI(QWidget* parent)
+    : QMainWindow(parent)
+{
+    ui.setupUi(this);
+
+    connect(ui.submitButton, &QPushButton::clicked, this, &QuizUI::on_submitButton_clicked);
+
+    on_nextButton_clicked();
+}
+
+QuizUI::~QuizUI()
+{}
