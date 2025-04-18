@@ -69,7 +69,6 @@ void QuizUI::showHistory() {
 void QuizUI::on_submitButton_clicked()
 {
    
-
     bool ok = false;
     int userAnswer = ui.answerLine->text().toInt(&ok);
     
@@ -79,6 +78,10 @@ void QuizUI::on_submitButton_clicked()
     }
 
     bool correct = validator.validateAnswer(userAnswer);  // Check if answer is correct
+    scoreManager.trackScore(correct);  // Update score if correct
+
+    ui.scoreLabel->setText(QString::fromStdString(scoreManager.displayScore()));
+
     ui.resultLabel->clear();
     ui.resultLabel->setText(correct ? "Correct!" : "Wrong!");
 
@@ -99,8 +102,6 @@ QuizUI::QuizUI(QWidget* parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
-
-    connect(ui.submitButton, &QPushButton::clicked, this, &QuizUI::on_submitButton_clicked);
 
     on_nextButton_clicked();
 }

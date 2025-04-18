@@ -13,6 +13,7 @@
 #include "ScoreManager.h"
 #include <iostream>
 
+
  // Constructor initializes the score to 0 at the start
 ScoreManager::ScoreManager() : score(0) {}
 
@@ -25,8 +26,11 @@ void ScoreManager::trackScore(bool isCorrect) {
 }
 
 // Displays the current score to the user
-void ScoreManager::displayScore() const {
+std::string ScoreManager::displayScore() const {
     std::cout << "Current Score: " << score << std::endl;  // Output the current score to console
+    std::string retScore = "Current Score: " + std::to_string(score);
+
+    return retScore;
 }
 
 // Returns the current score of the user

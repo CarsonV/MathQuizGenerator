@@ -40,7 +40,7 @@
    <widget class="QPushButton" name="submitButton">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>140</x>
       <y>180</y>
       <width>80</width>
       <height>24</height>
@@ -53,10 +53,10 @@
    <widget class="QLabel" name="scoreLabel">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>338</x>
       <y>10</y>
-      <width>49</width>
-      <height>16</height>
+      <width>131</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
@@ -92,7 +92,7 @@
    <widget class="QPushButton" name="nextButton">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>230</x>
       <y>180</y>
       <width>80</width>
       <height>24</height>

@@ -12,6 +12,8 @@
 
 #pragma once
 #include <iostream>
+#include <string>
+
 
 class ScoreManager {
 private:
@@ -25,7 +27,7 @@ public:
     void trackScore(bool isCorrect);
 
     // Method to display the current score to the user
-    void displayScore() const;
+    std::string displayScore() const;
 
     // Method to get the current score for use in other parts of the program
     int getScore() const;
