@@ -10,15 +10,38 @@
  */
 
 #include "HistoryManager.h"
+#include <fstream>
 
- // Method to add a score to the history
- // This method takes a Score object and adds it to the 'history' vector.
 void HistoryManager::addHistory(Score score) {
-    history.push_back(score);  // Adds the given score to the history vector
+    history.push_back(score);  // Adds a score to the history
 }
 
-// Method to retrieve the score history
-// This method returns the entire 'history' vector, which contains all the stored scores.
 std::vector<Score> HistoryManager::getHistory() {
-    return history;  // Returns the vector containing all score history
+    return history;  // Returns the vector of scores
+}
+
+void HistoryManager::saveHistoryToFile(const std::string& filename) const {
+    std::ofstream outFile(filename);
+    if (outFile.is_open()) {
+        outFile << history.size() << '\n';  // Save number of scores
+        for (const auto& score : history) {
+            score.saveToFile(outFile);  // Save each score
+        }
+        outFile.close();
+    }
+}
+
+void HistoryManager::loadHistoryFromFile(const std::string& filename) {
+    std::ifstream inFile(filename);
+    if (inFile.is_open()) {
+        size_t size;
+        inFile >> size;  // Read the number of scores
+        history.clear();
+        for (size_t i = 0; i < size; ++i) {
+            Score s;
+            s.loadFromFile(inFile);  // Load each score
+            history.push_back(s);
+        }
+        inFile.close();
+    }
 }
