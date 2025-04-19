@@ -12,23 +12,27 @@
 
 #pragma once
 #include <iostream>
-#include <string>
-
+#include <fstream>
 
 class ScoreManager {
 private:
-    int score;  // The current score of the user
+    int score;  // Current score of the user
 
 public:
     // Constructor that initializes the score to 0
     ScoreManager();
 
-    // Method to track and update the score based on the correctness of the user's answer
+    // Method to track and update the score based on user's answer
     void trackScore(bool isCorrect);
 
-    // Method to display the current score to the user
-    std::string displayScore() const;
+    // Method to display the current score
+    void displayScore() const;
 
-    // Method to get the current score for use in other parts of the program
+    // Method to get the current score for use elsewhere
     int getScore() const;
+
+    // File I/O operations
+    void saveScoreToFile(const std::string& filename) const;
+    void loadScoreFromFile(const std::string& filename);
 };
+
