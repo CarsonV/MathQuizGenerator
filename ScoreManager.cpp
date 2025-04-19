@@ -12,28 +12,37 @@
 
 #include "ScoreManager.h"
 #include <iostream>
+#include <fstream>
 
-
- // Constructor initializes the score to 0 at the start
 ScoreManager::ScoreManager() : score(0) {}
 
-// Updates the score based on whether the user's answer is correct or not
 void ScoreManager::trackScore(bool isCorrect) {
     if (isCorrect) {
-        score += 10;  // Increment score by 10 points for correct answers
+        score += 10;  // Increase score by 10 for correct answers
     }
-    // No penalty for incorrect answers; score remains unchanged
+    // No penalty for incorrect answers
 }
 
-// Displays the current score to the user
-std::string ScoreManager::displayScore() const {
-    std::cout << "Current Score: " << score << std::endl;  // Output the current score to console
-    std::string retScore = "Current Score: " + std::to_string(score);
-
-    return retScore;
+void ScoreManager::displayScore() const {
+    std::cout << "Current Score: " << score << std::endl;  // Display the score
 }
 
-// Returns the current score of the user
 int ScoreManager::getScore() const {
-    return score;  // Return the current score value
+    return score;  // Return the current score
+}
+
+void ScoreManager::saveScoreToFile(const std::string& filename) const {
+    std::ofstream out(filename);
+    if (out.is_open()) {
+        out << score;  // Save the current score
+        out.close();
+    }
+}
+
+void ScoreManager::loadScoreFromFile(const std::string& filename) {
+    std::ifstream in(filename);
+    if (in.is_open()) {
+        in >> score;  // Load the score from the file
+        in.close();
+    }
 }
