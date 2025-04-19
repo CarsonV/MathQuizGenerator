@@ -12,5 +12,14 @@
 
 #include "Score.h"
 
- // Constructor that initializes the score with the provided value
+Score::Score() : value(0) {}
+
 Score::Score(int v) : value(v) {}
+
+void Score::saveToFile(std::ofstream& out) const {
+    out << value << '\n';
+}
+
+void Score::loadFromFile(std::ifstream& in) {
+    in >> value;
+}
