@@ -11,20 +11,23 @@
  */
 
 #pragma once
-
 #include <vector>
+#include <string>
 #include "Score.h"
 
 class HistoryManager {
 private:
-    std::vector<Score> history;  // Vector to store the score history
+    std::vector<Score> history;  // Stores the history of scores
 
 public:
     // Method to add a score to the history
-    // Takes a Score object as a parameter and stores it in the history vector
     void addHistory(Score score);
 
     // Method to retrieve the entire score history
-    // Returns a vector of Score objects containing all the scores in history
     std::vector<Score> getHistory();
+
+    // File I/O operations
+    void saveHistoryToFile(const std::string& filename) const;
+    void loadHistoryFromFile(const std::string& filename);
 };
+
