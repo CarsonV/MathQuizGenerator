@@ -11,11 +11,17 @@
  */
 
 #pragma once
+#include <fstream>
 
 class Score {
 public:
     int value;  // Holds the score value
 
-    // Constructor that initializes the score with a given value
-    Score(int v);
+    // Constructors
+    Score();             // Default constructor
+    Score(int v);        // Parameterized constructor
+
+    // File I/O operations
+    void saveToFile(std::ofstream& out) const;
+    void loadFromFile(std::ifstream& in);
 };
