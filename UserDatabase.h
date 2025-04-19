@@ -14,6 +14,7 @@
 #include <string>
 #include <vector>
 #include "Score.h"
+#include <fstream>
 
 class UserDatabase {
 private:
@@ -32,4 +33,8 @@ public:
 
     // Getter for user's score history
     std::vector<Score> getHistory() const;
+
+    // File I/O operations
+    void saveUserToFile(const std::string& filename) const;
+    void loadUserFromFile(const std::string& filename);
 };
