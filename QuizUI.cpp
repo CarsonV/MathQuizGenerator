@@ -15,6 +15,9 @@
 #include <iostream>
 #include <string>
 
+#include "IntroDialog.h"
+#include "HistoryUI.h"
+
  // Set the difficulty level for the quiz (easy/medium/hard)
 void QuizUI::setDifficulty(const std::string& level) {
     generator.setDifficulty(level);  // Delegate to MathProblemGenerator
@@ -48,7 +51,7 @@ void QuizUI::displayQuiz() {
 
 // Display the current score and save it to history
 void QuizUI::showScore() {
-    scoreManager.displayScore();  // Show score on screen
+    ui.scoreLabel->setText(QString::fromStdString(std::to_string(scoreManager.getScore())));  // Show score on screen
 
     // Save current score to history
     Score score(scoreManager.getScore());
@@ -80,7 +83,7 @@ void QuizUI::on_submitButton_clicked()
     bool correct = validator.validateAnswer(userAnswer);  // Check if answer is correct
     scoreManager.trackScore(correct);  // Update score if correct
 
-    ui.scoreLabel->setText(QString::fromStdString(scoreManager.displayScore()));
+    showScore();
 
     ui.resultLabel->clear();
     ui.resultLabel->setText(correct ? "Correct!" : "Wrong!");
@@ -91,11 +94,18 @@ void QuizUI::on_nextButton_clicked()
 {
     Problem problem = generator.generateRandomProblem();  // Get a random math problem
 
-    ui.questionLabel->setText(QString::fromStdString(problem.question)); // QT set questionLabel to problem
+    ui.questionLabel->setText(QString::fromStdString(problem.question)); // QT set questionLabel to problems
     ui.answerLine->clear();
     ui.resultLabel->clear();
 
     validator.setAnswer(problem.answer);  // Set the correct answer for validation
+}
+
+// Exit main screen and then show the history page
+void QuizUI::on_exitButton_clicked()
+{
+    HistoryUI h;
+    h.show();
 }
 
 QuizUI::QuizUI(QWidget* parent)
@@ -103,7 +113,17 @@ QuizUI::QuizUI(QWidget* parent)
 {
     ui.setupUi(this);
 
-    on_nextButton_clicked();
+    on_nextButton_clicked(); // workaround but is here to ensure that we properly generate a problem before rendering the main window
+
+    // Once everything else is prepared, render the intro dialog to get difficulty and username
+    IntroDialog intro(this);
+
+    if (intro.exec() == QDialog::Accepted) {
+        QString diff = intro.getDifficulty();
+        setDifficulty(diff.toStdString());
+        ui.difficultyLabel->setText(diff);
+    }
+    
 }
 
 QuizUI::~QuizUI()

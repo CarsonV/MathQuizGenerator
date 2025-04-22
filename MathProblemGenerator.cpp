@@ -29,17 +29,17 @@ Problem MathProblemGenerator::generateRandomProblem() {
     int a, b;
 
     // Easy difficulty: Generates two random numbers between 1 and 10
-    if (difficultyLevel == "easy") {
+    if (difficultyLevel == "Easy") {
         a = rand() % 10 + 1;  // Random number between 1 and 10
         b = rand() % 10 + 1;  // Random number between 1 and 10
     }
     // Medium difficulty: Generates two random numbers between 1 and 50
-    else if (difficultyLevel == "medium") {
+    else if (difficultyLevel == "Medium") {
         a = rand() % 50 + 1;  // Random number between 1 and 50
         b = rand() % 50 + 1;  // Random number between 1 and 50
     }
     // Hard difficulty: Generates two random numbers between 1 and 100
-    else if (difficultyLevel == "hard") {
+    else if (difficultyLevel == "Hard") {
         a = rand() % 100 + 1;  // Random number between 1 and 100
         b = rand() % 100 + 1;  // Random number between 1 and 100
     }

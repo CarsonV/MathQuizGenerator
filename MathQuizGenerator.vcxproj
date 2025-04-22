@@ -161,7 +161,9 @@
   <ItemGroup>
     <ClCompile Include="AnswerValidator.cpp" />
     <ClCompile Include="HistoryManager.cpp" />
+    <ClCompile Include="HistoryUI.cpp" />
     <ClCompile Include="InputField.cpp" />
+    <ClCompile Include="IntroDialog.cpp" />
     <ClCompile Include="MainUI.cpp" />
     <ClCompile Include="MathProblemGenerator.cpp" />
     <ClCompile Include="MathQuizGenerator.cpp" />
@@ -175,8 +177,10 @@
   <ItemGroup>
     <ClInclude Include="AnswerValidator.h" />
     <ClInclude Include="HistoryManager.h" />
+    <QtMoc Include="HistoryUI.h" />
     <ClInclude Include="InputField.h" />
     <QtMoc Include="MainUI.h" />
+    <QtMoc Include="IntroDialog.h" />
     <ClInclude Include="MathProblemGenerator.h" />
     <ClInclude Include="Problem.h" />
     <QtMoc Include="QuizUI.h" />
@@ -186,6 +190,9 @@
     <ClInclude Include="UserDatabase.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="IntroDialog.ui" />
+    <QtUic Include="testing.ui" />
+    <QtUic Include="HistoryUI.ui" />
     <QtUic Include="MainUI.ui" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

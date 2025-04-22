@@ -14,6 +14,8 @@
 
 #include <iostream>
 #include "QuizUI.h"
+#include "HistoryUI.h"
+
 
 #include <QApplication>
 
@@ -22,7 +24,9 @@ int main(int argc, char* argv[]) {
 
     QApplication app(argc, argv);
     QuizUI w;
+    HistoryUI x;
     w.show();
+    //x.show();
     return app.exec();
 
     /*

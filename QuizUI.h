@@ -21,6 +21,7 @@
 #include <QMainWindow>
 #include "ui_MainUI.h"
 
+
  // The QuizUI class acts as the main interface for interacting with the user
 class QuizUI : public QMainWindow {
 
@@ -38,6 +39,7 @@ private:
 private slots:
     void on_submitButton_clicked();
     void on_nextButton_clicked();
+    void on_exitButton_clicked();
 
 
 public:

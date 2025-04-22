@@ -51,6 +51,12 @@
     <ClCompile Include="MainUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HistoryUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Problem.h">
@@ -88,8 +94,17 @@
     <QtMoc Include="QuizUI.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="HistoryUI.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="IntroDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="MainUI.ui" />
+    <QtUic Include="testing.ui" />
+    <QtUic Include="HistoryUI.ui" />
+    <QtUic Include="IntroDialog.ui" />
   </ItemGroup>
 </Project>
