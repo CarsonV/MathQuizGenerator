@@ -94,7 +94,8 @@ void QuizUI::on_submitButton_clicked()
 
     ui.resultLabel->clear();
     ui.resultLabel->setText(correct ? "Correct!" : "Wrong!");
-    if (correct == true)
+
+    if (correct == true) //auto progress if we get the right answer
     {
         on_nextButton_clicked();
     }
@@ -114,7 +115,8 @@ void QuizUI::on_nextButton_clicked()
 
 void QuizUI::on_historyButton_clicked()
 {
-    auto* h = new HistoryUI(this);
+    std::vector<Score> scores = userDB.getHistory();
+    auto* h = new HistoryUI(scores,this);
     h->show();
 
 }

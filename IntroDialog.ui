@@ -49,13 +49,6 @@
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QPushButton" name="cancelButton">
-      <property name="text">
-       <string>Cancel</string>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
   <widget class="QComboBox" name="difficultyBox">
@@ -122,22 +115,6 @@
     <hint type="destinationlabel">
      <x>183</x>
      <y>107</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cancelButton</sender>
-   <signal>clicked()</signal>
-   <receiver>IntroDialogClass</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>345</x>
-     <y>102</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>367</x>
-     <y>54</y>
     </hint>
    </hints>
   </connection>
