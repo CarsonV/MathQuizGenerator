@@ -17,6 +17,7 @@
 #include "ScoreManager.h"
 #include "InputField.h"
 #include "HistoryManager.h"
+#include "UserDatabase.h"
 
 #include <QMainWindow>
 #include "ui_MainUI.h"
@@ -33,18 +34,22 @@ private:
     MathProblemGenerator generator;        // Generates math problems based on difficulty
     AnswerValidator validator;             // Validates user input against the correct answer
     HistoryManager historyManager;         // Stores and retrieves score history
+    UserDatabase userDB;
 
     Ui::MainUIClass ui;
 
 private slots:
     void on_submitButton_clicked();
     void on_nextButton_clicked();
+    void on_historyButton_clicked();
     void on_exitButton_clicked();
 
 
 public:
     // Sets the difficulty level for the quiz (easy, medium, hard)
     void setDifficulty(const std::string& level);
+
+    void setUsername(const QString& user);
 
     // Displays a quiz question and processes user input
     void displayQuiz();

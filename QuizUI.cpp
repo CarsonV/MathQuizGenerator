@@ -23,6 +23,11 @@ void QuizUI::setDifficulty(const std::string& level) {
     generator.setDifficulty(level);  // Delegate to MathProblemGenerator
 }
 
+void QuizUI::setUsername(const QString& user)
+{
+    userDB.setUsername(user.toStdString());
+}
+
 // Display one quiz problem, get input, validate it, and update the score
 void QuizUI::displayQuiz() {
     Problem problem = generator.generateRandomProblem();  // Get a random math problem
@@ -56,6 +61,8 @@ void QuizUI::showScore() {
     // Save current score to history
     Score score(scoreManager.getScore());
     historyManager.addHistory(score);
+    userDB.saveUserInfo(score);
+    
 }
 
 // Display a history of previous scores
@@ -87,6 +94,10 @@ void QuizUI::on_submitButton_clicked()
 
     ui.resultLabel->clear();
     ui.resultLabel->setText(correct ? "Correct!" : "Wrong!");
+    if (correct == true)
+    {
+        on_nextButton_clicked();
+    }
 
 }
 
@@ -101,11 +112,18 @@ void QuizUI::on_nextButton_clicked()
     validator.setAnswer(problem.answer);  // Set the correct answer for validation
 }
 
+void QuizUI::on_historyButton_clicked()
+{
+    auto* h = new HistoryUI(this);
+    h->show();
+
+}
 // Exit main screen and then show the history page
 void QuizUI::on_exitButton_clicked()
 {
-    HistoryUI h;
-    h.show();
+    Score score;
+    historyManager.saveHistoryToFile("scores.txt");
+    userDB.saveUserToFile("users.txt");
 }
 
 QuizUI::QuizUI(QWidget* parent)
@@ -120,8 +138,13 @@ QuizUI::QuizUI(QWidget* parent)
 
     if (intro.exec() == QDialog::Accepted) {
         QString diff = intro.getDifficulty();
+        QString username = intro.getUsername();
+        QString displayUser = "User: " + username;
+
         setDifficulty(diff.toStdString());
+        
         ui.difficultyLabel->setText(diff);
+        ui.usernameLabel->setText(displayUser);
     }
     
 }
