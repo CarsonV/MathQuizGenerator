@@ -67,7 +67,7 @@
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>250</y>
+      <y>260</y>
       <width>80</width>
       <height>24</height>
      </rect>
@@ -158,7 +158,7 @@
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>220</y>
+      <y>230</y>
       <width>80</width>
       <height>24</height>
      </rect>
@@ -190,22 +190,5 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections>
-  <connection>
-   <sender>exitButton</sender>
-   <signal>clicked()</signal>
-   <receiver>MainUIClass</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>269</x>
-     <y>291</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>368</x>
-     <y>351</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

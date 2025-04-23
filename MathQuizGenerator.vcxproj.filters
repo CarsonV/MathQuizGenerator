@@ -103,7 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="MainUI.ui" />
-    <QtUic Include="testing.ui" />
     <QtUic Include="HistoryUI.ui" />
     <QtUic Include="IntroDialog.ui" />
   </ItemGroup>

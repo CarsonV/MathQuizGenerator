@@ -191,7 +191,6 @@
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="IntroDialog.ui" />
-    <QtUic Include="testing.ui" />
     <QtUic Include="HistoryUI.ui" />
     <QtUic Include="MainUI.ui" />
   </ItemGroup>

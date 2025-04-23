@@ -9,6 +9,14 @@
  * used when rendering the IntroDialog.ui file. Specifically it provides as a 
  * handler to get difficulty and username selection from the user before the
  * quiz starts.
+ * 
+ * UI elements: The UI was designed using Qt Widgets Designer and are best viewed using that tool
+ * 
+ * File: IntroDialog.ui
+ * 
+ * difficultyBox - Dropdown box to select one of three difficulties, Easy, Medium, Hard - QComboBox
+ * usernameLine - Text line that allows user input for username - QLineEdit
+ * okButton - This button is attached on the UI desiner to fire a Accept() signal to move to the next screen - QPushButton
  */
 #pragma once
 

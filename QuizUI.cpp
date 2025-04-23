@@ -8,6 +8,21 @@
  * This file defines the implementation of the QuizUI class, which acts as the user-facing
  * interface for the Math Quiz Generator. It handles displaying questions, accepting and
  * validating user input, tracking scores, and maintaining a score history.
+ * 
+ * UI elements: The UI was designed using Qt Widgets Designer and are best viewed using that tool
+ * 
+ * File: MainUI.ui
+ * 
+ * usernameLabel - Displays username, top left corner - QLabel
+ * scoreLabel - Displays user score value, top center - QLabel
+ * questionLabel - Displays current quiz question, middle center - QLabel
+ * answerLine - Entry line for an answer, middle center - QLineEdit
+ * submitButton - Button to check your answer for scoring - QPushButton
+ * nextButton - Button to skip to the next question, skips scoring - QPushButton
+ * historyButton - Spawns the HistoryUI screen in a new window as well as saving current state - QPushButton
+ * exitButton - Saves current state to file and then calls program quit() - QPushButton
+ * difficultyLabel - Displays difficulty selected, bottom left - QPushButton
+ * 
  */
 
 #include "QuizUI.h"
@@ -23,36 +38,12 @@ void QuizUI::setDifficulty(const std::string& level) {
     generator.setDifficulty(level);  // Delegate to MathProblemGenerator
 }
 
+// Sets the UserDatabase object username for this session
 void QuizUI::setUsername(const QString& user)
 {
     userDB.setUsername(user.toStdString());
 }
 
-// Display one quiz problem, get input, validate it, and update the score
-void QuizUI::displayQuiz() {
-    Problem problem = generator.generateRandomProblem();  // Get a random math problem
-
-
-    std::cout << "Solve: " << problem.question << std::endl;
-    std::cout << "Your answer: ";
-
-    validator.setAnswer(problem.answer);  // Set the correct answer for validation
-
-    std::string userInput;
-    std::getline(std::cin, userInput);  // Get user input as string
-
-    try {
-        int userAnswer = std::stoi(userInput);  // Convert to integer
-        bool correct = validator.validateAnswer(userAnswer);  // Check if answer is correct
-
-        scoreManager.trackScore(correct);  // Update score if correct
-        std::cout << (correct ? "Correct!" : "Wrong!") << std::endl;
-    }
-    catch (...) {
-        // Catch non-integer input and notify user
-        std::cout << "Invalid input. Please enter a number.\n";
-    }
-}
 
 // Display the current score and save it to history
 void QuizUI::showScore() {
@@ -61,8 +52,6 @@ void QuizUI::showScore() {
     // Save current score to history
     Score score(scoreManager.getScore());
     historyManager.addHistory(score);
-    userDB.saveUserInfo(score);
-    
 }
 
 // Display a history of previous scores
@@ -76,6 +65,7 @@ void QuizUI::showHistory() {
     }
 }
 
+// Handles all answer submision and does checking for badly entered answers. On correct answers go to next question
 void QuizUI::on_submitButton_clicked()
 {
    
@@ -102,6 +92,7 @@ void QuizUI::on_submitButton_clicked()
 
 }
 
+// Inital problem generation as well as next button control. Since this starts problem generation it must be called from constructor
 void QuizUI::on_nextButton_clicked()
 {
     Problem problem = generator.generateRandomProblem();  // Get a random math problem
@@ -113,21 +104,30 @@ void QuizUI::on_nextButton_clicked()
     validator.setAnswer(problem.answer);  // Set the correct answer for validation
 }
 
+// Save score to DB file so we can then read from it before showing HistoryUI screen
 void QuizUI::on_historyButton_clicked()
 {
+
+    Score score(scoreManager.getScore());
+    userDB.saveUserInfo(score);
+    
     std::vector<Score> scores = userDB.getHistory();
     auto* h = new HistoryUI(scores,this);
     h->show();
 
 }
-// Exit main screen and then show the history page
+// Exit main screen and save state, exit program at end
 void QuizUI::on_exitButton_clicked()
 {
-    Score score;
+    Score score(scoreManager.getScore());
     historyManager.saveHistoryToFile("scores.txt");
     userDB.saveUserToFile("users.txt");
+
+    QApplication::quit(); //gracefully exit the program entirely
 }
 
+// Core QT constructor, this inherits QT rendering and kicks off the entire quiz program
+// Calls the inital dialog to get user info and difficulty choice and saves state for next steps
 QuizUI::QuizUI(QWidget* parent)
     : QMainWindow(parent)
 {
@@ -138,13 +138,17 @@ QuizUI::QuizUI(QWidget* parent)
     // Once everything else is prepared, render the intro dialog to get difficulty and username
     IntroDialog intro(this);
 
+
+    // We are getting the Accepted status from when the OK button on the IntroDialog is pressed, this was setup within Qt Widgets Designer
     if (intro.exec() == QDialog::Accepted) {
         QString diff = intro.getDifficulty();
         QString username = intro.getUsername();
         QString displayUser = "User: " + username;
 
         setDifficulty(diff.toStdString());
+        setUsername(username);
         
+        // set UI elements on the main page to display username and difficulty settings
         ui.difficultyLabel->setText(diff);
         ui.usernameLabel->setText(displayUser);
     }
