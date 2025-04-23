@@ -14,8 +14,6 @@
 
 #include <iostream>
 #include "QuizUI.h"
-#include "HistoryUI.h"
-
 
 #include <QApplication>
 
@@ -24,41 +22,9 @@ int main(int argc, char* argv[]) {
 
     QApplication app(argc, argv);
     QuizUI w;
-    HistoryUI x;
+    
     w.show();
-    //x.show();
     return app.exec();
 
-    /*
-    QuizUI quizApp;  // Initialize the main UI component for the quiz
-
-    std::string difficulty;
-
-    std::cout << "Welcome to the Math Quiz Generator!" << std::endl;
-
-    // Prompt the user to select a difficulty level
-    std::cout << "Select difficulty level (easy/medium/hard): ";
-    std::cin >> difficulty;
-    std::cin.ignore();  // Clear newline from input buffer
-
-    // Set the selected difficulty in the quiz system
-    quizApp.setDifficulty(difficulty);
-
-    char choice;
-    do {
-        quizApp.displayQuiz();  // Display one math question
-        quizApp.showScore();    // Show the current score
-
-        // Ask the user if they want to try another question
-        std::cout << "Do you want to try another question? (y/n): ";
-        std::cin >> choice;
-        std::cin.ignore();  // Clear newline again
-
-    } while (choice == 'y' || choice == 'Y');  // Loop if user chooses to continue
-
-    std::cout << "Thanks for playing!" << std::endl;
-    quizApp.showScore();  // Final score display
-
-    return 0;
-    */
+    
 }
