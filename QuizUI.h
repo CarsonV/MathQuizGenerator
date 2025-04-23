@@ -61,7 +61,11 @@ private slots:
 
     // Inital problem generation as well as next button control. Since this starts problem generation it must be called from constructor
     void on_nextButton_clicked();
+
+    // Save score to DB file so we can then read from it before showing HistoryUI screen
     void on_historyButton_clicked();
+
+    // Exit main screen and save state, exit program at end
     void on_exitButton_clicked();
 
 

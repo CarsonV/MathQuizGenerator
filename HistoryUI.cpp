@@ -17,7 +17,7 @@
  */
 #include "HistoryUI.h"
 
-// QT constructor modified to 
+// QT constructor modified to accept a Score vector for display within its window
 HistoryUI::HistoryUI(const std::vector<Score>& history, QWidget *parent)
 	: QMainWindow(parent)
 {

@@ -28,6 +28,7 @@ class HistoryUI : public QMainWindow
 	Q_OBJECT
 
 public:
+	// QT constructor modified to accept a Score vector for display within its window
 	HistoryUI(const std::vector<Score>& history, QWidget *parent = nullptr);
 
 	//default 
