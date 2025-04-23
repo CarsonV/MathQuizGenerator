@@ -17,10 +17,11 @@
 
 #include <QApplication>
 
-
+// Currently is just a driver for spawning the main QtApplication
 int main(int argc, char* argv[]) {
 
-    QApplication app(argc, argv);
+   
+    QApplication app(argc, argv); // main Qt application controling application state with the OS
     QuizUI w;
     
     w.show();
